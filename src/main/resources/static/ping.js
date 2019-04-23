@@ -100,6 +100,9 @@ $(function () {
             $("#"+id+"_tr").insertAfter(beforeNode);
             beforeNode = $("#"+id+"_tr");
         }
+        if(num<maxCount){
+
+        }
     }
 
     var runing = false;
@@ -150,6 +153,7 @@ $(function () {
                 });
                 return ;
             }
+            maxCount = 0;
             updateList(ipList);
             $(this).addClass("layui-btn-warm");
             $(this).html("结束扫描");
